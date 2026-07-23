@@ -1,3 +1,0 @@
-# Timestamp conversion
-$ADObjectList | Select-Object -Property Name, LastLogon | ForEach-Object {Write-Output ("{0} `t: {1}" -f $_.Name, [DateTime]::FromFileTime($_.LastLogon))}
-
